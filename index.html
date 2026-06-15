@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Reyansh Turns Ten 🎉</title>
-<meta name="description" content="A little journey through Reyansh's first ten years, with love from the whole family." />
+<meta name="description" content="Ten years of Reyansh — his journey, milestones and moments, with love from the whole family." />
 <style>
   :root{
     --gold:#f6b73c; --gold-deep:#e0982a; --ink:#2a2140; --plum:#3a2a5d;
@@ -65,7 +65,7 @@
   @keyframes float{0%{transform:translateY(0) rotate(-6deg)}100%{transform:translateY(-118vh) rotate(6deg)}}
 
   /* ---------- INTRO ---------- */
-  .intro{max-width:760px;margin:0 auto;padding:70px 24px 20px;text-align:center}
+  .intro{max-width:760px;margin:0 auto;padding:70px 24px 10px;text-align:center}
   .intro h2{font-size:clamp(1.6rem,5vw,2.4rem);color:var(--plum);margin-bottom:16px}
   .intro p{font-size:1.12rem;color:#5a5170}
 
@@ -89,16 +89,31 @@
     text-transform:uppercase;color:#fff;background:linear-gradient(120deg,var(--pink),var(--gold-deep));
     padding:6px 14px;border-radius:999px;margin-bottom:12px}
   .card h3{font-size:1.35rem;color:var(--plum);margin-bottom:6px}
-  .card p{color:#5f5675;font-size:1rem;margin-bottom:14px}
-  .shots{display:grid;gap:8px}
-  .shots.one{grid-template-columns:1fr}
-  .shots.two{grid-template-columns:1fr 1fr}
-  .shots.three{grid-template-columns:repeat(2,1fr)}
+  .card p{color:#5f5675;font-size:1rem;margin-bottom:12px}
+  .shots{display:grid;gap:8px;margin-bottom:12px}
   .shots img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;
     box-shadow:0 6px 16px var(--shadow);cursor:pointer;transition:transform .3s}
+  .shots.three{grid-template-columns:repeat(2,1fr)}
+  .shots.two{grid-template-columns:1fr 1fr}
   .shots img.wide{aspect-ratio:4/3}
   .shots img:hover{transform:scale(1.03)}
   .shots .span2{grid-column:span 2}
+  .facts{list-style:none}
+  .facts li{position:relative;padding-left:24px;margin-bottom:7px;color:#5f5675;font-size:.97rem}
+  .facts li::before{content:"✦";position:absolute;left:0;top:0;color:var(--gold-deep)}
+  .quote{margin-top:12px;padding:12px 14px;border-left:4px solid var(--pink);
+    background:#fff4f8;border-radius:0 12px 12px 0;font-style:italic;color:#7a4a63;font-size:.96rem}
+  .node:nth-child(odd) .quote{border-left:none;border-right:4px solid var(--pink);border-radius:12px 0 0 12px;text-align:right}
+  .emoji-head{font-size:2.2rem;line-height:1;margin-bottom:6px}
+
+  /* ---------- GAME CTA ---------- */
+  .btn{display:inline-block;background:linear-gradient(120deg,var(--pink),var(--gold-deep));
+    color:#fff;font-weight:700;padding:14px 30px;border-radius:999px;text-decoration:none;
+    box-shadow:0 12px 26px var(--shadow);transition:transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .game{max-width:760px;margin:10px auto 0;padding:40px 24px;text-align:center}
+  .game h2{font-size:clamp(1.5rem,5vw,2.2rem);color:var(--plum);margin-bottom:10px}
+  .game p{color:#5a5170;margin-bottom:6px}
 
   /* ---------- CAKES STRIP ---------- */
   .cakes{background:linear-gradient(160deg,#2d2350,#43306e);color:#fff;padding:64px 20px;margin-top:30px}
@@ -136,6 +151,7 @@
     .node,.node:nth-child(odd),.node:nth-child(even){width:100%;left:0;text-align:left;padding:18px 10px 18px 46px}
     .node:nth-child(odd) .dot,.node:nth-child(even) .dot{left:11px;right:auto}
     .node .dot{top:34px}
+    .node:nth-child(odd) .quote{border-right:none;border-left:4px solid var(--pink);border-radius:0 12px 12px 0;text-align:left}
   }
   @media(prefers-reduced-motion:reduce){.balloon{display:none}.node{transition:none;opacity:1;transform:none}}
 </style>
@@ -155,7 +171,7 @@
 <!-- ============ INTRO ============ -->
 <section class="intro">
   <h2>Ten years in the making 💫</h2>
-  <p>From a tiny bundle in 2016 to the bright, beaming birthday boy he is today — here's a little look back at how Reyansh grew, one birthday at a time, surrounded by a family that has adored him every single day.</p>
+  <p>From a tiny bundle in 2016 to the bright, record-breaking ten-year-old he is today — here's a look back at how Reyansh grew, one birthday at a time, cheered on every single day by the family's <strong>“Apna Group”</strong>.</p>
 </section>
 
 <!-- ============ TIMELINE ============ -->
@@ -172,6 +188,7 @@
         <img src="images/y2017_b.jpg" alt="Reyansh aged 1">
         <img src="images/y2017_c.jpg" alt="Reyansh aged 1 with family">
       </div>
+      <div class="quote">“Reyansh ko to godi mein hi rakhna padega” — still small enough to be carried everywhere.</div>
     </div>
   </article>
 
@@ -179,13 +196,18 @@
     <span class="dot"></span>
     <div class="card">
       <span class="badge">2018 · Turning 2</span>
-      <h3>Two & terrific 🎈</h3>
-      <p>Suspenders, a little bow-tie, and arms thrown wide open to the world. The birthday treat that year? A trip to watch <em>Incredibles&nbsp;2</em> on his very birthday.</p>
+      <h3>Two &amp; terrific 🎈</h3>
+      <p>Suspenders, a bow-tie, and arms thrown wide open to the world. The birthday treat? A trip to watch <em>Incredibles&nbsp;2</em> on his very birthday.</p>
       <div class="shots three">
         <img src="images/y2018_a.jpg" alt="Reyansh aged 2 with arms up">
         <img src="images/y2018_b.jpg" alt="Reyansh aged 2 with bow tie">
         <img src="images/y2018_ticket.jpg" alt="Incredibles 2 ticket, 23 June 2018" class="span2 wide">
       </div>
+      <ul class="facts">
+        <li>His first <em>mundan</em> ceremony.</li>
+        <li>Papa's nickname for him: <strong>“R²”</strong> (R-squared 🤓).</li>
+        <li>Famously nibbled the little packet from a shoe box 😅.</li>
+      </ul>
     </div>
   </article>
 
@@ -193,12 +215,16 @@
     <span class="dot"></span>
     <div class="card">
       <span class="badge">2019 · Turning 3</span>
-      <h3>Cheeky & three 😜</h3>
-      <p>All silly grins and partner-in-crime energy with the cousins. Never a dull moment.</p>
+      <h3>Cheeky &amp; three 😜</h3>
+      <p>All silly grins and partner-in-crime energy with the cousins — and already a little bookworm.</p>
       <div class="shots two">
         <img src="images/y2019_a.jpg" alt="Reyansh aged 3 making a funny face">
         <img src="images/y2019_b.jpg" alt="Reyansh aged 3 with cousins">
       </div>
+      <ul class="facts">
+        <li>Qualified for an inter-school competition.</li>
+        <li>A fresh stack of books — and his first science test.</li>
+      </ul>
     </div>
   </article>
 
@@ -207,13 +233,14 @@
     <div class="card">
       <span class="badge">2020 · Turning 4</span>
       <h3>The big home birthday 🏠</h3>
-      <p>The lockdown year — so the family brought the party home, complete with a cake that proudly read <strong>“Reyansh”</strong>. Four years old and shining.</p>
+      <p>The lockdown year — so the family brought the party home, with a cake that proudly read <strong>“Reyansh”</strong> and cake-cutting over a video call.</p>
       <div class="shots three">
         <img src="images/y2020_a.jpg" alt="Reyansh aged 4">
         <img src="images/y2020_b.jpg" alt="Reyansh aged 4 smiling">
         <img src="images/y2020_family.jpg" alt="Reyansh with family">
         <img src="images/y2020_cake.jpg" alt="Reyansh birthday cake 2020" class="span2 wide">
       </div>
+      <div class="quote">Mummy: “Why do you write all your numbers backwards?” &nbsp;Reyansh: “But I don't write <strong>1</strong> backwards!” 😄</div>
     </div>
   </article>
 
@@ -228,6 +255,10 @@
         <img src="images/y2021_b.jpg" alt="Reyansh aged 5">
         <img src="images/y2021_c.jpg" alt="Reyansh aged 5 at his party">
       </div>
+      <ul class="facts">
+        <li>Won the <strong>carrom final</strong> — against a 9-year-old, at just five!</li>
+        <li>Built a <strong>Pac-Man game</strong> in Scratch with Papa.</li>
+      </ul>
     </div>
   </article>
 
@@ -235,13 +266,18 @@
     <span class="dot"></span>
     <div class="card">
       <span class="badge">2022 · Turning 6</span>
-      <h3>Six & full of mischief 🎉</h3>
-      <p>Bigger smiles, bigger balloons, and a birthday boy who knows exactly how to celebrate.</p>
+      <h3>Six &amp; full of energy 🎉</h3>
+      <p>Bigger smiles, bigger balloons — and a birthday boy now sporting a <strong>karate yellow belt</strong>.</p>
       <div class="shots three">
         <img src="images/y2022_a.jpg" alt="Reyansh aged 6">
         <img src="images/y2022_b.jpg" alt="Reyansh aged 6 with balloons">
         <img src="images/y2022_cake.jpg" alt="Reyansh birthday cake 2022" class="span2 wide">
       </div>
+      <ul class="facts">
+        <li>Ran his <strong>first 5K</strong> — people stopped to take photos with him!</li>
+        <li>School Rank 5 in the IGKO Olympiad.</li>
+        <li>Learning chess moves (and the queen-bishop trick 😏).</li>
+      </ul>
     </div>
   </article>
 
@@ -249,17 +285,70 @@
     <span class="dot"></span>
     <div class="card">
       <span class="badge">2023 · Turning 7</span>
-      <h3>A grand celebration 👑</h3>
-      <p>A proper party fit for the birthday boy — decorations, friends, family, and a cake with his name in lights.</p>
+      <h3>A record-breaking year 👑</h3>
+      <p>A grand party fit for the birthday boy — and a year of seriously big achievements.</p>
       <div class="shots three">
         <img src="images/y2023_b.jpg" alt="Reyansh aged 7 with family">
         <img src="images/y2023_c.jpg" alt="Reyansh's 7th birthday party">
         <img src="images/y2023_cake.jpg" alt="Reyansh birthday cake 2023" class="span2 wide">
       </div>
+      <ul class="facts">
+        <li>🏆 <strong>National Record (India Book of Records)</strong> — named 68 countries' flags in one minute… while hula-hooping!</li>
+        <li>Started learning <strong>Python</strong> coding.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="node">
+    <span class="dot"></span>
+    <div class="card">
+      <span class="badge">2024 · Turning 8</span>
+      <div class="emoji-head">🧩</div>
+      <h3>Sharp as ever</h3>
+      <ul class="facts">
+        <li>Came <strong>first</strong> in the kids' Sudoku championship.</li>
+        <li>Climbing the ranks in the Maths Olympiad.</li>
+        <li>Onto the cricket pitch — match after match.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="node">
+    <span class="dot"></span>
+    <div class="card">
+      <span class="badge">2025 · Turning 9</span>
+      <div class="emoji-head">🏃‍♂️</div>
+      <h3>Always on the move</h3>
+      <ul class="facts">
+        <li>Finished the <strong>Mumbai Junior Miler 2-mile run</strong> in 24:20.</li>
+        <li>Ran his own <strong>stall</strong> at the school fair with friends.</li>
+        <li>Leading everyone in Surya Namaskar &amp; learning Sanskrit shlokas.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="node">
+    <span class="dot"></span>
+    <div class="card">
+      <span class="badge">2026 · Turning 10 🎂</span>
+      <div class="emoji-head">🏏</div>
+      <h3>Double digits!</h3>
+      <ul class="facts">
+        <li>Hitting <strong>sixes in every match</strong> and winning games with the Sunday cricket group.</li>
+        <li>Standard 5, and growing up so fast — “Reyansh toh bahut bada lag raha hai”.</li>
+      </ul>
+      <div class="quote">“Reyansh kitna cute tha pehle” — and look how big you've grown. ❤️</div>
     </div>
   </article>
 
 </main>
+
+<!-- ============ GAME ============ -->
+<section class="game">
+  <h2>🎮 Play Reyansh's Birthday Game</h2>
+  <p>Made specially for his 10th birthday — for Reyansh and his friends to play.</p>
+  <p><a class="btn" href="https://reyansh-10th-birthday.vercel.app/#play" target="_blank" rel="noopener">Let's Play →</a></p>
+</section>
 
 <!-- ============ CAKES ============ -->
 <section class="cakes">
@@ -275,21 +364,21 @@
 <!-- ============ FAMILY ============ -->
 <section class="family">
   <h2>Loved by the whole gang ❤️</h2>
-  <p>Every photo here came from the family's own <strong>“Apna Group”</strong> — ten years of moments quietly saved up by the people who love Reyansh most.</p>
+  <p>Every photo and memory here came from the family's own <strong>“Apna Group”</strong> — ten years of moments quietly saved up by the people who love Reyansh most.</p>
   <div class="chips">
     <span class="chip">Mummy &amp; Papa — Priyanka &amp; Mohit</span>
     <span class="chip">Naani Anjana</span>
-    <span class="chip">Varsha Maasi &amp; Ram Maasa</span>
-    <span class="chip">Cousins Fruity &amp; Adi</span>
-    <span class="chip">…and all the uncles &amp; aunts</span>
+    <span class="chip">Varsha Maasi &amp; Ramratan Maasa</span>
+    <span class="chip">Cousins Frooti &amp; Adi</span>
+    <span class="chip">…and all the uncles, aunts &amp; cousins</span>
   </div>
 </section>
 
 <!-- ============ CLOSING ============ -->
 <section class="closing">
   <h2>Happy 10th Birthday, Reyansh! 🎉</h2>
-  <p>Ten years of giggles, grins and growing up too fast. We can't wait to see the boy you'll become.</p>
-  <p>Here's to the next ten — and all the cakes in between.</p>
+  <p>Ten years of giggles, grins, records and growing up too fast. We can't wait to see the boy you'll become.</p>
+  <p>Here's to the next ten — and all the cakes, runs and sixes in between.</p>
   <div class="heart">🎂❤️🎈</div>
 </section>
 
