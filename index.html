@@ -130,6 +130,10 @@
   .family{max-width:820px;margin:0 auto;padding:72px 24px;text-align:center}
   .family h2{font-size:clamp(1.6rem,5vw,2.3rem);color:var(--plum);margin-bottom:14px}
   .family p{font-size:1.1rem;color:#5a5170;margin-bottom:10px}
+  .family-photo{display:block;margin:26px auto 8px;width:100%;max-width:380px;border-radius:18px;
+    box-shadow:0 14px 34px var(--shadow);cursor:pointer;transition:transform .3s}
+  .family-photo:hover{transform:scale(1.02)}
+  .family .cap{font-size:.92rem;color:#7a7290;margin-bottom:4px}
   .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
   .chip{background:#fff;border:2px solid var(--gold);color:var(--plum);font-weight:600;
     padding:8px 16px;border-radius:999px;box-shadow:0 6px 14px var(--shadow)}
@@ -364,6 +368,8 @@
 <section class="family">
   <h2>Loved by the whole gang ❤️</h2>
   <p>Every photo and memory here came from the family's own <strong>“Apna Group”</strong> — ten years of moments quietly saved up by the people who love Reyansh most.</p>
+  <img class="family-photo" src="images/family_together.jpg" alt="Reyansh with Tauji Mayank, Varsha Bua, Dadi and the family">
+  <p class="cap">Reyansh with Tauji Mayank, Varsha Bua, Dadi &amp; the family 💛</p>
   <div class="chips">
     <span class="chip">Mummy &amp; Papa — Priyanka &amp; Mohit</span>
     <span class="chip">Dadi Anjana</span>
@@ -413,7 +419,7 @@
 
   // Lightbox
   const lb=document.getElementById('lb'), lbImg=lb.querySelector('img');
-  document.querySelectorAll('.shots img, .cake-row img, .hero-photo').forEach(img=>{
+  document.querySelectorAll('.shots img, .cake-row img, .hero-photo, .family-photo').forEach(img=>{
     img.addEventListener('click',()=>{ lbImg.src=img.src; lb.style.display='flex'; });
   });
   lb.addEventListener('click',()=>{ lb.style.display='none'; lbImg.src=''; });
