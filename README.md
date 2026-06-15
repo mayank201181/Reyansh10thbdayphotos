@@ -18,13 +18,17 @@ and can be hosted anywhere (e.g. GitHub Pages).
   balloons, scroll animations, and tap-to-enlarge photos).
 - **`images/`** — web-optimised photos, named by year (`y2017_a.jpg`, etc.).
 
-## A note on the photos
+## A note on the content
 
-The source was a media-only export of the group chat (no text messages), so the
-photos were chosen by date — clustered around Reyansh's birthday each June, so
-the **birthday boy in each set is Reyansh himself**. Coverage runs from his
-**1st birthday (2017) to his 7th (2023)**; the export didn't include media for
-2024–2026, so the most recent years aren't shown yet.
+Two exports of the family group chat were used:
+
+- **Photos** came from a media-only export, chosen by date — clustered around
+  Reyansh's birthday each June, so the **birthday boy in each set is Reyansh
+  himself**. Photo coverage runs from his **1st birthday (2017) to his 7th
+  (2023)** (the media export didn't include 2024–2026).
+- **Milestones & quotes** came from the text export, which runs all the way to
+  2026 — so the timeline now tells the **full age 1 → 10 story**. The years
+  without photos (ages 8, 9, 10) appear as milestone cards.
 
 ### Swapping or adding photos
 
